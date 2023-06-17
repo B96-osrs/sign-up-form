@@ -26,10 +26,10 @@ a {
 .header {
     display: flex;
     justify-content:center;
-    background-color: rgb(0, 0, 0,0.45);
-    padding: 8px;
+    background-color: rgb(0, 0, 0,0.35);
+    padding: 12px;
     margin-top: 30vh;
-    font-family:"Khodijah", sans-serif;
+    font-family:"Khodijah", "Roboto", sans-serif;
     gap:16px;
     align-items: center;
 }
@@ -59,8 +59,53 @@ a {
     display: flex;
     flex-direction: column;
     width: 60vw;
+    font-family: "Roboto", sans-serif;
+    padding-top: 64px;
+    background-color: #ebebeb;
+}
+.first-section {
+    font-weight: bold;
+    padding: 24px;
+    width: 80%;
+}
+.second-section {
+    display: flex;
+    padding: 24px;
+    background-color: white;
+    box-shadow: 0 1px 6px -4px black;
+}
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+    font-size: 14px;
+}
+.third-section a {
+    color:#db9e4e;
+    font-weight: bold;
+    text-decoration: none;
+}
+.third-section a:hover {
+    text-decoration: underline;
+    color: #d18827;
+}
+.create-account-btn {
+    width: 164px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 6px;
+    border-style: none;
+    color: white;
+    background-color: #db9e4e;
+    font-weight: bold;
+}
+.create-account-btn:hover {
+    background-color: #d18827;
+    cursor: pointer;
 }
 
 label {
-    display: inline-block;
+    display: block;
 }
