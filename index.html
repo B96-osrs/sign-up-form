@@ -23,39 +23,39 @@
              <p>Sign up for more quotes</p>
         </div>
         <div class="second-section">
-            <form class="sign-up-form" action="my-handling-form-page" method="post">
+            <form class="sign-up-form" action="my-handling-form-page" method="GET" id="sign-up-form">
                     
                         <div>
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first_name">
+                            <input type="text" id="first-name" name="first_name" required>
                         </div>
 
                         <div>
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last_name">
+                            <input type="text" id="last-name" name="last_name" required>
                         </div>
 
                         <div>
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" placeholder="example@web.net" required>
                         </div>
 
                         <div>
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" minlength="9" placeholder="06643456789">
                         </div>
                         <div>
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" minlength="9" required>
                         </div>
                         <div>
                             <label for="password-confirm">CONFIRM PASSWORD</label>
-                            <input type="password" id="password-confirm"  name="password_confirm" >
+                            <input type="password" id="password-confirm"  name="password_confirm" minlength="9" required>
                         </div>
             </form>
         </div>
         <div class="third-section">
-            <button class="create-account-btn">Create Account</button>
+            <button type="submit" class="create-account-btn" form="sign-up-form">Create Account</button>
             <div class="text-bottom">Already have an account? <a href="https://www.w3schools.com/css/css_link.asp">Log in</a></div>
         </div>
     </div>
